@@ -53,7 +53,7 @@ header {
     background-color: aqua;
 }
 
-.wrapper {
+/*.wrapper {
     display: block;
     margin: 0 auto;
 }
@@ -70,4 +70,8 @@ ul {
 
 main div {
     display: flex;
+}*/
+
+main div p {
+	width: 75%;
 }
