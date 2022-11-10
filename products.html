@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Products</title>
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/products.css">
     <!-- embeded google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,6 +15,11 @@
     <script src="https://kit.fontawesome.com/de65f5e786.js" crossorigin="anonymous"></script>
 </head>
 <body>
+
+    <ul class="skip-links">
+        <li><a href="#nav">skip to nav</a></li>
+        <li><a href="#main">Skip to page content</a></li>
+    </ul>
     
     <header>
         <div class="wrapper">
@@ -26,7 +32,7 @@
                     <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
                 </form>
             </div>
-            <nav>
+            <nav id="nav">
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="products.html">Products</a></li>
@@ -40,20 +46,59 @@
     <form action="">
         <h3>Filters</h3>
         <!-- Sliders only created with javascript -->
-        <label for="one">first filter</label>
+        <label for="one">Sugar free</label>
         <input type="checkbox" name="" id="one">
+        <label for="one">Gluten free</label>
+        <input type="checkbox" name="" id="two">
+        <label for="one">Dairy free</label>
+        <input type="checkbox" name="" id="three">
+        <button>Apply</button>
     </form>
 </div>
 
-<div class="product">
-    <div class="item-one">
-        <img src="" alt="">
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+<div class="product" id="main">
+    <div class="product-wrapper">
+        <img srcset="
+        https://via.placeholder.com/200x200 200w,
+        https://via.placeholder.com/400x400 400w"
+        sizes="
+        (max-width: 200px) 200px,
+        (max-width: 400px) 400px"
+        src="https://via.placeholder.com/200" alt="Vanilla Cakepop">
+        <p>Vanilla Cakepop</p>
         <button>Add to cart</button>
     </div>
-    <div class="item-two">
-        <img src="" alt="">
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+    <div class="product-wrapper">
+        <img srcset="
+        https://via.placeholder.com/200x200 200w,
+        https://via.placeholder.com/400x400 400w"
+        sizes="
+        (max-width: 200px) 200px,
+        (max-width: 400px) 400px"
+        src="https://via.placeholder.com/200" alt="Chocolate Cakepop">
+        <p>Chocolate Cakepop</p>
+        <button>Add to cart</button>
+    </div>
+    <div class="product-wrapper">
+        <img srcset="
+        https://via.placeholder.com/200x200 200w,
+        https://via.placeholder.com/400x400 400w"
+        sizes="
+        (max-width: 200px) 200px,
+        (max-width: 400px) 400px"
+        src="https://via.placeholder.com/200" alt="Sugar free Vanilla Cakepop">
+        <p>Sugar-free Vanilla Cakepop</p>
+        <button>Add to cart</button>
+    </div>
+    <div class="product-wrapper">
+        <img srcset="
+        https://via.placeholder.com/200x200 200w,
+        https://via.placeholder.com/400x400 400w"
+        sizes="
+        (max-width: 200px) 200px,
+        (max-width: 400px) 400px"
+        src="https://via.placeholder.com/200" alt="Dairy free Chocolate Cakepop">
+        <p>Dairy-free Chocolate Cakepop</p>
         <button>Add to cart</button>
     </div>
 </div>

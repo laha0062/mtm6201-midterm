@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact</title>
     <link href="css/main.css" rel="stylesheet">
+    <!-- contact css -->
+    <link rel="stylesheet" href="css/contact.css">
     <!-- embeded google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,6 +16,11 @@
     <script src="https://kit.fontawesome.com/de65f5e786.js" crossorigin="anonymous"></script>
 </head>
 <body>
+
+    <ul class="skip-links">
+        <li><a href="#nav">skip to nav</a></li>
+        <li><a href="#main">Skip to page content</a></li>
+    </ul>
     
     <header>
         <div class="wrapper">
@@ -26,7 +33,7 @@
                     <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
                 </form>
             </div>
-            <nav>
+            <nav id="nav">
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="products.html">Products</a></li>
@@ -36,10 +43,10 @@
         </div>
     </header>
 
-    <main>
+    <main id="main">
         <div>
             <form>
-                <label for="fullname">Fullname</label>
+                <label for="fullname">Full name</label>
                 <input type="text" id="fullname">
                 <label for="email">Email</label>
                 <input type="text" id="email">
@@ -50,10 +57,12 @@
         </div>
         <div class="map">
             <!--embeded map-->
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5600.058970304013!2d-75.6955647726616!3d45.42890696640215!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce050261d6c9c7%3A0xc02283c07a3b83a2!2sByWard%20Market%2C%20Ottawa%2C%20ON!5e0!3m2!1sen!2sca!4v1668072772578!5m2!1sen!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
-        <dic class="calender">
+        <div class="calender">
             <!--embeded calender-->
-        </dic>
+            <iframe src="https://calendar.google.com/calendar/embed?src=3171e6665bc01e7dd3b0fc6e3396247a385b6cdf94640c582ca97b42882eef1a%40group.calendar.google.com&ctz=America%2FToronto" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+        </div>
     </main>
 
 </body>
