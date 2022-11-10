@@ -2,4 +2,53 @@
     border: 2px;
     border-style: solid;
     border-color: #DDD7DC;
+    text-align: center;
+}
+
+@media screen and (min-width: 800px) {
+    .filters form {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+
+    }
+
+    form label, form input {
+        display: inline-block;
+    }
+
+    section {
+        display: grid;
+        grid-template-areas: 
+        "f pro";
+    }
+
+    form {
+        grid-area: f;
+    }
+
+    .product {
+        display: grid;
+        grid-area: pro;
+        grid-template-areas: 
+        "one two"
+        "three four";
+        text-align: center;
+    }
+
+    .item-one {
+        grid-area: one;
+    }
+
+    .item-two {
+        grid-area: two;
+    }
+
+    .item-three {
+        grid-area: three;
+    }
+
+    .item-four {
+        grid-area: four;
+    }
 }
