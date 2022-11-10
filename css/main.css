@@ -50,18 +50,25 @@ table {
 /*end of css reset*/
 
 header {
-    background-color: aqua;
+    background-color: white;
+	border-bottom: solid 2px;
+	border-color: #DDD7DC;
 }
 
 body {
 	font-family: 'Roboto', sans-serif;
 }
 
-/*.wrapper {
-    display: block;
-    margin: 0 auto;
+li {
+	list-style: none;
 }
 
+.wrapper, .logo{
+    display: block;
+    margin: 0 auto;
+	text-align: center;
+}
+/*
 .top {
     display: flex;
     justify-content: space-between;
@@ -81,5 +88,26 @@ main div p {
 }*/
 
 .logo {
-	width: 20%;
+	/* change logo width to 20% after breakpoint */
+	width: 50%;
+}
+
+body table {
+	text-align: center;
+	margin: 0 auto;
+}
+
+.product-wrapper, .product-wrapper button {
+	margin: 0 auto;
+	text-align: center;
+}
+
+img {
+	margin-top: 2%;
+}
+
+/*targets contact form on contact page*/
+main div form {
+	display: flex;
+	flex-direction: column;
 }
