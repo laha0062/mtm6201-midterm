@@ -49,18 +49,31 @@ table {
 
 /*end of css reset*/
 
+body {
+	font-family: 'Roboto', sans-serif;
+}
+
 header {
     background-color: white;
 	border-bottom: solid 2px;
 	border-color: #DDD7DC;
 }
 
-body {
-	font-family: 'Roboto', sans-serif;
-}
-
 li {
 	list-style: none;
+}
+
+li a {
+	text-decoration: none;
+	color: white; 
+}
+
+ul {
+	background-color: #A956A0;
+	padding: 1%;
+	margin-bottom: 0;
+	font-size: 1.25rem;
+	font-weight: 700;
 }
 
 .wrapper, .logo{
@@ -68,28 +81,19 @@ li {
     margin: 0 auto;
 	text-align: center;
 }
-/*
-.top {
-    display: flex;
-    justify-content: space-between;
-}
-
-ul {
-    display: flex;
-    justify-content: space-around;
-}
-
-main div {
-    display: flex;
-}
-
-main div p {
-	width: 75%;
-}*/
 
 .logo {
 	/* change logo width to 20% after breakpoint */
 	width: 50%;
+}
+
+main {
+	margin: 1%;
+}
+
+h2 {
+	margin: 1%;
+	font-size: 1.75rem;
 }
 
 body table {
@@ -102,12 +106,77 @@ body table {
 	text-align: center;
 }
 
+main table {
+	width: 50%;
+	background-color:  #DDD7DC;
+}
+
 img {
 	margin-top: 2%;
+	/* Used max width to fix rendered size overflow */
+	max-width: 400px;
 }
 
 /*targets contact form on contact page*/
 main div form {
 	display: flex;
 	flex-direction: column;
+}
+
+@media screen and (min-width: 800px) {
+	
+	.top {
+		display: flex;
+		justify-content: space-between;
+		padding-top: 1%;
+	}
+
+	.top form {
+		width: 20%;
+		padding-top: 2%;
+	}
+
+	ul {
+		display: flex;
+		justify-content: space-around;
+	}
+
+	.logo {
+		width: 20%;
+		margin: 0;
+	}
+	
+
+	main div {
+		display: flex;
+	}
+
+	main div p {
+		width: 75%;
+	}
+
+	main table {
+		margin-left: 1%;
+		width: 45%;
+		background-color:  #DDD7DC;
+	}
+
+	div h2 {
+		text-align: center;
+	}
+
+	.featured-products {
+		display: flex;
+		padding: 0.5%;
+	}
+
+	img {
+		max-width: 260px;
+	}
+}
+
+@media screen and (min-width: 1200px) {
+	img {
+		max-width: 400px;
+	}
 }

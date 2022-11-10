@@ -1,0 +1,40 @@
+
+div {
+    margin: 0.5%;
+}
+main div form {
+    margin: 1%;
+    width: 100%;
+    align-items: stretch;
+    display: flex;
+
+}
+
+iframe {
+    max-width: 100%;
+}
+@media screen and (min-width: 800px) {
+    main {
+        display: grid;
+        grid-template-areas: 
+        "co m"
+        "co ca";
+        padding-left: 15%;
+    }
+
+    form {
+        grid-area: co;
+    }
+    
+    .map {
+        grid-area: m;
+        margin: 0 auto;
+        width: 50%;
+    }
+    
+    .calender {
+        grid-area: ca;
+        margin: 0 auto;
+        width: 50%;
+    }
+}
