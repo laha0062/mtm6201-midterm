@@ -6,10 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>mtm6201-midterm</title>
     <link href="css/main.css" rel="stylesheet">
-    <!-- embeded google fonts -->
+    <!-- embeded google -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <!-- font awesome kit -->
+    <script src="https://kit.fontawesome.com/de65f5e786.js" crossorigin="anonymous"></script>
 </head>
 <body>
 
@@ -21,7 +23,7 @@
                 <form>
                     <input type="text" placeholder="search">
                     <!--search icon replaced with svg-->
-                    <button type="submit">Search</button>
+                    <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
                 </form>
             </div>
             <nav>
@@ -72,18 +74,42 @@
     <div>
         <h2>Featured Products</h2>
         <div>
-            <div>
-                <img src="" alt="">
+            <div class="product-wrapper">
+                <img srcset="
+                https://via.placeholder.com/150 150w,
+                https://via.placeholder.com/300 300w,
+                "
+                sizes="
+                (max-width: 150px) 150px,
+                (max-width: 300px) 300px,
+                "
+                alt="Placeholder image" src="https://via.placeholder.com/150">
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
                 <button>Add to cart</button>
             </div>
-            <div>
-                <img src="" alt="">
+            <div class="product-wrapper">
+                <img srcset="
+                https://via.placeholder.com/150 150w,
+                https://via.placeholder.com/300 300w,
+                "
+                sizes="
+                (max-width: 150px) 150px,
+                (max-width: 300px) 300px,
+                "
+                alt="Placeholder image" src="https://via.placeholder.com/150">
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
                 <button>Add to cart</button>
             </div>
-            <div>
-                <img src="" alt="">
+            <div class="product-wrapper">
+                <img srcset="
+                https://via.placeholder.com/150 150w,
+                https://via.placeholder.com/300 300w,
+                "
+                sizes="
+                (max-width: 150px) 150px,
+                (max-width: 300px) 300px,
+                "
+                alt="Placeholder image" src="https://via.placeholder.com/150">
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
                 <button>Add to cart</button>
             </div>
